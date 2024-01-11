@@ -12,3 +12,8 @@ body {
   background-repeat: no-repeat, no-repeat;
   background-position: top left, bottom right;
 }
+
+/* .welcome-bg {
+  background-image: url('./src/assets/svg/stars.svg');
+  background-size: contain;
+} */
