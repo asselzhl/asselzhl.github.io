@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #0F103F;
+  font-family: 'Poppins';
+}
+
+.welcome-bg {
+  background-image: url('./src/assets/img/welcomeEllipse01.png'), url('./src/assets/img/welcomeEllipse02.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, bottom right;
+}
