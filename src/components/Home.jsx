@@ -1,9 +1,9 @@
 import React from 'react'
 import { TypeAnimation } from 'react-type-animation';
 
-const Welcome = () => {
+const Home = () => {
   return (
-    <div className='my-[-106px] w-full h-[954px] welcome-bg py-[355px] px-4'>
+    <div className='my-[-106px] w-full h-[954px] home-bg py-[355px] px-4'>
         <div className='pl-10 md:pl-14 lg:pl-20 xl:pl-64'>
             <TypeAnimation
                 sequence={[
@@ -24,4 +24,4 @@ const Welcome = () => {
   )
 }
 
-export default Welcome
+export default Home

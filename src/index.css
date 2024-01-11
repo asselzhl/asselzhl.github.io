@@ -7,13 +7,16 @@ body {
   font-family: 'Poppins';
 }
 
-.welcome-bg {
+.home-bg {
   background-image: url('./src/assets/img/welcomeEllipse01.png'), url('./src/assets/img/welcomeEllipse02.png');
   background-repeat: no-repeat, no-repeat;
   background-position: top left, bottom right;
 }
 
-/* .welcome-bg {
-  background-image: url('./src/assets/svg/stars.svg');
+.about-bg {
+  background-image: url('./src/assets/img/aboutBg.png');
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: contain;
-} */
+}
+
