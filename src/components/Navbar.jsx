@@ -12,7 +12,8 @@ const Navbar = () => {
   }
 
   return (
-    <nav className='w-full pt-10 px-4'>
+    <div className='w-full'>
+      <nav className='pt-10 px-4 max-w-[1240px] mx-auto'>
         <ul className='items-center mx-auto text-white justify-between max-w-[793px] hidden md:flex'>
             <li className='p-2.5 hover:text-[#AB71C6] hover:cursor-pointer duration-500'><a href=""></a>About me</li>
             <li className='p-2.5  hover:text-[#AB71C6] hover:cursor-pointer duration-500'><a href=""></a>Tech Stack</li>
@@ -36,7 +37,8 @@ const Navbar = () => {
               <li className='p-5 hover:text-[#AB71C6] hover:cursor-pointer duration-500'><a href=""></a>Contact</li>
           </ul>
         </div>
-    </nav>
+      </nav>
+    </div>
   )
 }
 

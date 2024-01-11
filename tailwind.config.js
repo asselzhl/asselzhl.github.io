@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        'transparent-blue': 'rgba(47, 47, 138, 0.60)'
+        'transparent-blue': 'rgba(47, 47, 138, 0.60)',
+        'transparent-gray': 'rgba(255, 255, 255, 0.40)'
       }
     },
   },

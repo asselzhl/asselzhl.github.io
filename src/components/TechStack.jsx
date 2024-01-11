@@ -13,10 +13,10 @@ import vite from '../assets/svg/stack/vite.svg';
 
 const TechStack = () => {
   return (
-    <div>
-        <div className='text-white w-full px-4'>
+    <div className='w-full'>
+        <div className='text-white max-w-[1240px] px-4 mx-auto'>
             <div className='bg-transparent-blue rounded-[30px] border border-[#FFFFFF4D] border-solid backdrop-blur-[10px] py-12 px-20'>
-                <h3 className='text-center text-2xl font-bold mb-10'>My Tech Stack</h3>
+                <h3 className='text-center text-3xl font-bold mb-10'>My Tech Stack</h3>
                 <div className='flex gap-x-24 gap-y-16 flex-wrap content-center justify-center'>
                     <Card src={js} name='JavaScript' alt='js' />
                     <Card src={react} name='React' alt='react' />

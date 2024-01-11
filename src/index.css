@@ -20,3 +20,10 @@ body {
   background-size: contain;
 }
 
+
+.projects-bg {
+  background-image: url('./src/assets/img/projectsBg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
