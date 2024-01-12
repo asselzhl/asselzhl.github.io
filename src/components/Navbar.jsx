@@ -12,14 +12,14 @@ const Navbar = () => {
   }
 
   return (
-    <div className='w-full'>
+    <header className='w-full'>
       <nav className='pt-10 px-4 max-w-[1240px] mx-auto'>
         <ul className='items-center mx-auto text-white justify-between max-w-[793px] hidden md:flex'>
-            <li className='p-2.5 hover:text-[#AB71C6] hover:cursor-pointer duration-500'><a href=""></a>About me</li>
-            <li className='p-2.5  hover:text-[#AB71C6] hover:cursor-pointer duration-500'><a href=""></a>Tech Stack</li>
+            <ListItem text='About me' />
+            <ListItem text='Tech Stack' />
             <li className='p-2.5 hover:text-[#AB71C6] hover:cursor-pointer duration-500'><a href=""></a><img src={logo} alt="/" /></li>
-            <li className='p-2.5  hover:text-[#AB71C6] hover:cursor-pointer duration-500'><a href=""></a>Projects</li>
-            <li className='p-2.5 hover:text-[#AB71C6] hover:cursor-pointer duration-500'><a href=""></a>Contact</li>
+            <ListItem text='Projects' />
+            <ListItem text='Contacts' />
         </ul>
 
         <div className='block md:hidden'>
@@ -31,16 +31,23 @@ const Navbar = () => {
         </div>
         <div className={!nav ? 'fixed right-0 top-0 w-[60%] h-full border-l border-l-[#AB71C6] ease-in-out duration-300 bg-[#0F103F]' : 'fixed right-[-100%] ease-in-out duration-300'}>
           <ul className='text-white flex flex-col items-center justify-center pt-20'>
-              <li className='p-5 hover:text-[#AB71C6] hover:cursor-pointer duration-500'><a href=""></a>About me</li>
-              <li className='p-5  hover:text-[#AB71C6] hover:cursor-pointer duration-500'><a href=""></a>Skills</li>
-              <li className='p-5  hover:text-[#AB71C6] hover:cursor-pointer duration-500'><a href=""></a>Projects</li>
-              <li className='p-5 hover:text-[#AB71C6] hover:cursor-pointer duration-500'><a href=""></a>Contact</li>
+            <ListItem text='About me' />
+            <ListItem text='Tech Stack' />
+            <ListItem text='Projects' />
+            <ListItem text='Contacts' />
           </ul>
         </div>
       </nav>
-    </div>
+    </header>
   )
 }
 
 
+const ListItem = (props) => {
+  return (
+    <li className='p-2.5 hover:text-[#AB71C6] hover:cursor-pointer duration-500'><a href=""></a>{props.text}</li>
+  )
+}
+
 export default Navbar
+export { ListItem }

@@ -7,8 +7,8 @@ import github from '../assets/svg/github.svg'
 
 const Projects = () => {
   return (
-    <div className='w-full projects-bg'>
-        <div className='max-w-[1240px] mx-auto px-4 py-56 text-white'>
+    <div className='w-full footer-bg z-10 relative'>
+        <div className='max-w-[1240px] mx-auto px-4 pt-56 pb-[600px] text-white projects-bg'>
             <h3 className='text-3xl font-bold text-center mb-10'>Projects</h3>
             <div className='flex flex-wrap content-center justify-center gap-x-[50px] gap-y-16'>
                 <Card 
@@ -56,7 +56,7 @@ const Projects = () => {
 
 const Card = (props) => {
     return (
-        <div className='bg-transparent-gray rounded-[20px] basis-[360px]'>
+        <div className='bg-transparent-blue rounded-[20px] basis-[360px] backdrop-blur-md'>
             <div>
                 <img src={project} alt="/" />
             </div>

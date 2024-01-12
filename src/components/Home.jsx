@@ -21,7 +21,7 @@ const Home = () => {
             />
             <h1 className='text-white text-3xl sm:text-5xl md:text-6xl font-bold mb-2.5'>Assel Zholaushybay</h1>
             <h2 className='text-2xl sm:text-4xl md:text-5xl text-[#6083FF] font-bold leading-snug mb-8'>I’m a Front-end Developer</h2>
-            <a href={cv} download="Assel_Zholaushybay_Frontend_Developer" className='bg-gradient-to-r from-[#C961DE] to-[#2954A3] text-white py-3 px-9 rounded-[30px]'>Download CV</a>
+            <a href={cv} download="Assel_Zholaushybay_Frontend_Developer" className='inline-block bg-gradient-to-r from-[#C961DE] to-[#2954A3] hover:scale-110 ease-in-out duration-300 text-white py-3 px-9 rounded-[30px] border border-transparent-white border-solid'>Download CV</a>
         </div>
       </div>
     </div>
