@@ -8,7 +8,7 @@ export default {
     extend: {
       colors: {
         'transparent-blue': 'rgba(47, 47, 138, 0.60)',
-        'transparent-gray': 'rgba(255, 255, 255, 0.40)',
+        'transparent-gray': 'rgba(255, 255, 255, 0.60)',
         'transparent-white': 'rgba(255, 255, 255, 0.60)'
       }
     },

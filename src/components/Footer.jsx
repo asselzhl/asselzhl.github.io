@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <footer className='w-full bg-[#1C1C65] mt-[-300px]'>
         <div className='px-4 max-w-[1240px] mx-auto pt-[108px]'>
-          <div className='border-b border-transparent-gray border-solid pb-14'>
+          <div className='border-b border-transparent-gray border-solid pb-14 relative z-30'>
             <ul className='flex items-center mx-auto text-white justify-between max-w-[653px] mb-14'>
               <ListItem text='About me' />
               <ListItem text='Skills' />
