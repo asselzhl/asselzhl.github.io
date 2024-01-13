@@ -4,7 +4,7 @@ import cv from '../assets/pdf/Assel_Zholaushybay_Frontend_Developer.pdf'
 
 const Home = () => {
   return (
-    <div className='my-[-106px] h-[954px] home-bg'>
+    <div className='my-[-106px] h-[100vh] home-bg' id='home'>
       <div className='max-w-[1240px] py-[355px] px-4'>
         <div className='pl-10 md:pl-14 lg:pl-20 xl:pl-64'>
             <TypeAnimation

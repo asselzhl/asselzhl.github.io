@@ -7,8 +7,8 @@ import github from '../assets/svg/github.svg'
 
 const Projects = () => {
   return (
-    <div className='w-full footer-bg z-10 relative'>
-        <div className='max-w-[1240px] mx-auto px-4 pt-56 pb-[600px] text-white projects-bg'>
+    <div className='w-full footer-bg z-10 relative' id='projects'>
+        <div className='max-w-[1240px] mx-auto px-4 pt-36 pb-[600px] text-white'>
             <h3 className='text-3xl font-bold text-center mb-10'>Projects</h3>
             <div className='flex flex-wrap content-center justify-center gap-x-[50px] gap-y-16'>
                 <Card 
@@ -65,13 +65,13 @@ const Card = (props) => {
                 <p className='mb-4'>{props.desc}</p>
                 <p className='text-sm mb-5'><span className='font-bold'>Tech stack : </span>{props.stack}</p>
                 <div className='flex gap-x-[50px]'>
-                    <a className='underline text-sm hover:text-gray-700 ease-in-out duration-500' href="">
-                        <img src={anchor} alt="anchor" />
-                        Live Preview
+                    <a className='underline text-sm hover:opacity-60 ease-in-out duration-500 hover:cursor-pointer flex gap-x-2' href={props.demo}>
+                        <span><img src={anchor} alt="anchor" /></span>
+                        <span>Live Preview</span>
                     </a>
-                    <a className='underline text-sm hover:text-gray-700 ease-in-out duration-500' href="">
-                        <img src={github} alt="github icon" />
-                        View Code
+                    <a className='underline text-sm hover:opacity-60 ease-in-out duration-500 hover:cursor-pointer flex gap-x-2' href={props.git}>
+                        <span><img src={github} alt="github icon" /></span>
+                        <span>View Code</span>
                     </a>
                 </div>
             </div>

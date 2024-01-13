@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import logo from '/logo.svg'
 import { HiMenuAlt3, HiX } from "react-icons/hi";
-
-
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Navbar = () => {
   const [nav, setNav] = useState(true);
@@ -15,11 +14,19 @@ const Navbar = () => {
     <header className='w-full'>
       <nav className='pt-10 px-4 max-w-[1240px] mx-auto'>
         <ul className='items-center mx-auto text-white justify-between max-w-[793px] hidden md:flex'>
-            <ListItem text='About me' />
-            <ListItem text='Tech Stack' />
+            <Link smooth to='#about'>
+              <ListItem text='About me' />
+            </Link>
+            <Link smooth to='#stack'>
+              <ListItem text='Tech Stack' />
+            </Link>
             <li className='p-2.5 hover:text-[#AB71C6] hover:cursor-pointer duration-500'><a href=""></a><img src={logo} alt="/" /></li>
-            <ListItem text='Projects' />
-            <ListItem text='Contacts' />
+            <Link smooth to='#projects'>
+              <ListItem text='Projects' />
+            </Link>
+            <Link smooth to='#contacts'>
+              <ListItem text='Contacts' />
+            </Link>
         </ul>
 
         <div className='block md:hidden'>
