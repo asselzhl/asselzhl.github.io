@@ -20,7 +20,6 @@ const Projects = () => {
     <div className='w-full footer-bg z-10 relative' id='projects'>
         <div className='max-w-[1240px] mx-auto px-4 pt-36 pb-[600px] text-white'>
             <h3 className='text-3xl font-bold text-center mb-10'>Projects</h3>
-            {/* <div className='flex flex-wrap content-center justify-center gap-x-[50px] gap-y-16'> */}
                 <Swiper
                     slidesPerView={3}
                     // spaceBetween={10}
@@ -68,8 +67,6 @@ const Projects = () => {
 					);
 				})}
                 </Swiper>
-            {/* </div> */}
-            
         </div>
     </div>
   )

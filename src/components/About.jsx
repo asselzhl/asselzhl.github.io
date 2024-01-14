@@ -1,5 +1,6 @@
 import React from 'react'
 
+import gallup from '../assets/pdf/Assel_Zholaushybay_ClifftonStrengths.pdf'
 
 const About = () => {
   return (
@@ -17,13 +18,22 @@ const About = () => {
               My love for front-end development stems from the sheer joy of creating visually stunning websites that resemble pieces of art. I'm excited to bring my skills and creativity to build exceptional web experiences.
             </p>
             <h3 className='text-2xl font-bold mb-10'>My soft skills</h3>
-            <ul className='flex justify-center gap-10 flex-wrap'>
+            <ul className='flex justify-center gap-10 flex-wrap mb-20'>
               <li className='text-lg p-2.5 border border-white rounded-3xl'>Communication</li>
               <li className='text-lg p-2.5 border border-white rounded-3xl'>Collaboration</li>
               <li className='text-lg p-2.5 border border-white rounded-3xl'>Problem Solving</li>
               <li className='text-lg p-2.5 border border-white rounded-3xl'>Analytical Skills</li>
               <li className='text-lg p-2.5 border border-white rounded-3xl'>Attention to Details</li>
             </ul>
+            <h3 className='text-2xl font-bold mb-10'>My top 5 talents according to <a href="https://www.gallup.com/cliftonstrengths/en/253715/34-cliftonstrengths-themes.aspx" className='underline'>CliftonStrengths</a></h3>
+            <ul className='flex justify-center gap-10 flex-wrap mb-20'>
+              <li className='text-lg p-2.5 border border-white rounded-3xl basis-[145px] bg-[#7b2481]'>Responsibility</li>
+              <li className='text-lg p-2.5 border border-white rounded-3xl basis-[145px] bg-[#00945d]'>Context</li>
+              <li className='text-lg p-2.5 border border-white rounded-3xl basis-[145px] bg-[#7b2481]'>Achiever</li>
+              <li className='text-lg p-2.5 border border-white rounded-3xl basis-[145px] bg-[#0070cd]'>Harmony</li>
+              <li className='text-lg p-2.5 border border-white rounded-3xl basis-[145px] bg-[#00945d]'>Input</li>
+            </ul>
+            <a href={gallup} target='_blank' className='inline-block bg-gradient-to-r from-[#C961DE] to-[#2954A3] hover:scale-110 ease-in-out duration-300 text-white py-3 px-9 rounded-[30px] border border-transparent-white border-solid'>View full report</a>
         </div>
     </div>
   )
