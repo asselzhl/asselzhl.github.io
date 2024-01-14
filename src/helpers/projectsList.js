@@ -10,7 +10,7 @@ const projects = [
 	},
 	{
 		img: project01,
-		title: 'Library - landing page',
+		title: 'Library',
 		stack: 'JavaScript, HTML, CSS',
 		demoLink: 'https://rolling-scopes-school.github.io/asselzhl-JSFEPRESCHOOL2023Q2/library/',
 		gitHubLink: 'https://github.com/asselzhl/image-gallery', // !!!!!!!!
