@@ -50,9 +50,9 @@ const Navbar = () => {
 }
 
 
-const ListItem = (props) => {
+const ListItem = ({text}) => {
   return (
-    <li className='p-2.5 hover:text-[#AB71C6] hover:cursor-pointer duration-500'><a href=""></a>{props.text}</li>
+    <li className='p-2.5 hover:text-[#AB71C6] hover:cursor-pointer duration-500'>{text}</li>
   )
 }
 

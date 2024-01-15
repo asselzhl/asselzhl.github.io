@@ -17,7 +17,7 @@ const Home = () => {
                 wrapper="span"
                 speed={50}
                 repeat={0}
-                className="text-[#4A72FF] text-2xl font-bold"
+                className="text-[#4A72FF] text-3xl font-bold"
             />
             <h1 className='text-white text-3xl sm:text-5xl md:text-6xl font-bold mb-2.5'>Assel Zholaushybay</h1>
             <h2 className='text-2xl sm:text-4xl md:text-5xl text-[#6083FF] font-bold leading-snug mb-8'>I’m a Front-end Developer</h2>

@@ -18,7 +18,7 @@ function App() {
       <TechStack />
       <Projects />
       <Footer />
-      <SideMenu />
+      {/* <SideMenu /> */}
     </>
     </BrowserRouter>
   )

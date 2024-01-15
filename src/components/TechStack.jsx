@@ -13,7 +13,7 @@ import vite from '../assets/svg/stack/vite.svg';
 
 const TechStack = () => {
   return (
-    <div className='w-full py-40' id='stack'>
+    <div className='w-full py-32' id='stack'>
         <div className='text-white max-w-[1240px] px-4 mx-auto'>
             <div className='bg-transparent-blue rounded-[30px] border border-[#FFFFFF4D] border-solid backdrop-blur-[10px] py-12 px-20'>
                 <h3 className='text-center text-3xl font-bold mb-10'>My Tech Stack</h3>
