@@ -77,7 +77,7 @@ const Project = ({ id, title, img }) => {
     return (
             <div className='bg-transparent-blue rounded-[20px] basis-[360px] backdrop-blur-md'>
                 <div>
-                    <img src={project.img} alt={project.title} />
+                    <img src={project.img} alt={project.title} className='rounded-t-[20px]' />
                 </div>
                 <div className='p-[30px]'>
                     <h4 className='text-xl font-bold mb-5'>{project.title}</h4>
