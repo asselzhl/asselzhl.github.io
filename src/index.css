@@ -43,3 +43,15 @@ body {
   font-size: 80px;
 }
 
+.scroll-to-top {
+  background-color: rgba(47, 47, 138, 0.60);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  transition: 0.3s;
+}
+.scroll-to-top:hover {
+  transform: scale(1.2);
+}
