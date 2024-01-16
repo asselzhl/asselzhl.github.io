@@ -17,12 +17,11 @@ import github from '../assets/svg/github.svg'
 
 const Projects = () => {
   return (
-    <div className='w-full footer-bg z-10 relative' id='projects'>
-        <div className='max-w-[1240px] mx-auto px-4 pt-32 pb-[600px] text-white'>
+    <div className='w-full lg:footer-bg z-10 relative' id='projects'>
+        <div className='max-w-[1240px] mx-auto px-4 pt-16 sm:pt-32 pb-[600px] text-white'>
             <h3 className='text-3xl font-bold text-center mb-10'>Projects</h3>
                 <Swiper
                     slidesPerView={3}
-                    // spaceBetween={10}
                     navigation={true}
                     pagination={{
                       clickable: true,
@@ -38,20 +37,6 @@ const Projects = () => {
                         modifier: 1,
                         slideShadows: false,
                       }}
-                    // breakpoints={{
-                    //   640: {
-                    //     slidesPerView: 2,
-                    //     spaceBetween: 20,
-                    //   },
-                    //   768: {
-                    //     slidesPerView: 4,
-                    //     spaceBetween: 40,
-                    //   },
-                    //   1024: {
-                    //     slidesPerView: 5,
-                    //     spaceBetween: 50,
-                    //   },
-                    // }}
                     modules={[Pagination, Navigation, EffectCoverflow]}
                 >
                 {projects.map((project, index) => {
@@ -75,14 +60,14 @@ const Projects = () => {
 const Project = ({ id, title, img }) => {
 	const project = projects[id];
     return (
-            <div className='bg-transparent-blue rounded-[20px] basis-[360px] backdrop-blur-md'>
+            <div className='bg-transparent-blue rounded-[20px] basis-[200px] sm:basis-[360px] grow-0 shrink-0 backdrop-blur-md'>
                 <div>
                     <img src={project.img} alt={project.title} className='rounded-t-[20px]' />
                 </div>
-                <div className='p-[30px]'>
-                    <h4 className='text-xl font-bold mb-5'>{project.title}</h4>
-                    <p className='text-sm mb-5'><span className='font-bold'>Tech stack : </span>{project.stack}</p>
-                    <div className='flex gap-x-[50px]'>
+                <div className='p-5 sm:p-[30px]'>
+                    <h4 className='sm:text-xl font-bold mb-5'>{project.title}</h4>
+                    <p className='text-xs sm:text-sm mb-5'><span className='font-bold'>Tech stack : </span>{project.stack}</p>
+                    <div className='flex flex-wrap gap-3 sm:gap-x-[50px]'>
                         <a className='underline text-sm hover:opacity-60 ease-in-out duration-500 hover:cursor-pointer flex gap-x-2' href={project.demoLink} target='_blank'>
                             <span><img src={anchor} alt="anchor" /></span>
                             <span>Live Preview</span>
