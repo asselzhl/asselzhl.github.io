@@ -8,18 +8,18 @@ body {
 }
 @layer utilities {
   .home-bg {
-    background-image: url('./src/assets/img/welcomeEllipse02.png');
+    background-image: url('/src/assets/img/welcomeEllipse02.png');
     background-repeat: no-repeat;
     background-position: bottom right;
   }
   .about-bg {
-    background: url('./src/assets/img/aboutBg.png');
+    background: url('/src/assets/img/aboutBg.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
   .footer-bg {
-    background-image: url('./src/assets/img/footerBgLeft.png'), url('./src/assets/img/footerBgRight.png');
+    background-image: url('/src/assets/img/footerBgLeft.png'), url('/src/assets/img/footerBgRight.png');
     background-repeat: no-repeat, no-repeat;
     background-position: bottom 50px left, bottom -100px right;
   }

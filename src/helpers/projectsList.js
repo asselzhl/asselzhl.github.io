@@ -16,7 +16,7 @@ const projects = [
 		title: 'Library',
 		stack: 'JavaScript, HTML, CSS',
 		demoLink: 'https://rolling-scopes-school.github.io/asselzhl-JSFEPRESCHOOL2023Q2/library/',
-		gitHubLink: 'https://github.com/asselzhl', // !!!!!!!!
+		gitHubLink: 'https://github.com/asselzhl/library',
 	},
 	{
 		img: project03,
