@@ -6,27 +6,24 @@ body {
   background-color: #0F103F;
   font-family: 'Poppins';
 }
-
-.home-bg {
-  background-image: url('./src/assets/img/welcomeEllipse01.png'), url('./src/assets/img/welcomeEllipse02.png');
-  background-repeat: no-repeat, no-repeat;
-  background-position: top left, bottom right;
+@layer utilities {
+  .home-bg {
+    background-image: url('/src/assets/img/welcomeEllipse02.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+  .about-bg {
+    background: url('/src/assets/img/aboutBg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .footer-bg {
+    background-image: url('/src/assets/img/footerBgLeft.png'), url('/src/assets/img/footerBgRight.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom 50px left, bottom -100px right;
+  }
 }
-
-
-.about-bg {
-  background: url('./src/assets/img/aboutBg.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.footer-bg {
-  background-image: url('./src/assets/img/footerBgLeft.png'), url('./src/assets/img/footerBgRight.png');
-  background-repeat: no-repeat, no-repeat;
-  background-position: bottom 50px left, bottom -100px right;
-}
-
 
 .swiper {
   width: 100%;
@@ -51,6 +48,7 @@ body {
   width: 60px;
   height: 60px;
   transition: 0.3s;
+  z-index: 50;
 }
 .scroll-to-top:hover {
   transform: scale(1.2);

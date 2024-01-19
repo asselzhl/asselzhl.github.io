@@ -4,7 +4,7 @@ import gallup from '../assets/pdf/Assel_Zholaushybay_ClifftonStrengths.pdf'
 
 const About = () => {
   return (
-    <div className='about-bg text-center py-36' id='about'>
+    <div className='about-bg text-center py-20 sm:py-36' id='about'>
         <div className='text-white self-center max-w-[1240px] mx-auto flex content-center justify-center px-4'>
           <div className='max-w-4xl'>
             <h3 className='text-2xl font-bold mb-3'>About me</h3>

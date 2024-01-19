@@ -13,11 +13,11 @@ import vite from '../assets/svg/stack/vite.svg';
 
 const TechStack = () => {
   return (
-    <div className='w-full py-32' id='stack'>
+    <div className='w-full py-16 sm:py-32' id='stack'>
         <div className='text-white max-w-[1240px] px-4 mx-auto'>
-            <div className='bg-transparent-blue rounded-[30px] border border-[#FFFFFF4D] border-solid backdrop-blur-[10px] py-12 px-20'>
+            <div className='bg-transparent-blue rounded-[30px] border border-[#FFFFFF4D] border-solid backdrop-blur-[10px] py-12 px-10 md:px-20'>
                 <h3 className='text-center text-3xl font-bold mb-10'>My Tech Stack</h3>
-                <div className='flex gap-x-24 gap-y-16 flex-wrap content-center justify-center'>
+                <div className='flex gap-x-5 gap-y-10 md:gap-x-24 md:gap-y-16 flex-wrap content-center justify-center'>
                     <Card src={js} name='JavaScript' alt='js' />
                     <Card src={react} name='React' alt='react' />
                     <Card src={html} name='HTML' alt='html' />
@@ -37,7 +37,7 @@ const TechStack = () => {
 
 const Card = (props) => {
     return (
-        <div className='basis-32 grow-0 shrink flex flex-col text-center'>
+        <div className=' basis-20 md:basis-32 grow-0 shrink flex flex-col text-center'>
             <img className='basis-[128px] grow-0 shrink-0' src={props.src} alt={`${props.alt} icon`} />
             <span className='text-lg mt-3'>{props.name}</span>
         </div>
