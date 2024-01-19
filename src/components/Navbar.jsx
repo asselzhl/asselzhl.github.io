@@ -38,10 +38,18 @@ const Navbar = () => {
         </div>
         <div className={!nav ? 'fixed right-0 top-0 w-[60%] h-full border-l border-l-[#AB71C6] ease-in-out duration-300 bg-[#0F103F]' : 'fixed right-[-100%] ease-in-out duration-300'}>
           <ul className='text-white flex flex-col items-center justify-center pt-20'>
-            <ListItem text='About me' />
-            <ListItem text='Tech Stack' />
-            <ListItem text='Projects' />
-            <ListItem text='Contacts' />
+            <Link smooth to='#about'>
+              <ListItem text='About me' />
+            </Link>
+            <Link smooth to='#stack'>
+              <ListItem text='Tech Stack' />
+            </Link>
+            <Link smooth to='#projects'>
+              <ListItem text='Projects' />
+            </Link>
+            <Link smooth to='#contacts'>
+              <ListItem text='Contacts' />
+            </Link>
           </ul>
         </div>
       </nav>
