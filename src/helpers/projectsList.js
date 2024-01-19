@@ -29,7 +29,7 @@ const projects = [
 		img: project04,
 		title: 'Personal Website',
 		stack: 'React, Tailwind CSS',
-		demoLink: 'https://asselzhl-whack-a-mole.netlify.app/', // !!!!!!!!
+		demoLink: 'https://asselzhl.github.io/website/',
 		gitHubLink: 'https://github.com/asselzhl/portfolio-react',
 	},
 ];
