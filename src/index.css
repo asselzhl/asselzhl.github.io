@@ -41,14 +41,14 @@ body {
 }
 
 .scroll-to-top {
-  background-color: rgba(47, 47, 138, 0.60);
+  background-color: rgba(47, 47, 138, 0.60)!important;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60px;
-  height: 60px;
+  width: 60px!important;
+  height: 60px!important;
   transition: 0.3s;
-  z-index: 50;
+  z-index: 50!important;
 }
 .scroll-to-top:hover {
   transform: scale(1.2);
