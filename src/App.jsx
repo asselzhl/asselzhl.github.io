@@ -5,7 +5,6 @@ import About from './components/About'
 import TechStack from './components/TechStack'
 import Projects from './components/Projects'
 import Footer from './components/Footer'
-import SideMenu from './components/SideMenu'
 import { BrowserRouter } from 'react-router-dom'
 
 function App() {
@@ -18,7 +17,6 @@ function App() {
       <TechStack />
       <Projects />
       <Footer />
-      {/* <SideMenu /> */}
     </>
     </BrowserRouter>
   )
