@@ -2,6 +2,7 @@ import project01 from "../assets/img/imageGallery.png";
 import project02 from "../assets/img/library.png";
 import project03 from "../assets/img/mole.png";
 import project04 from "../assets/img/portfolio.png";
+import project05 from "../assets/img/weatherApp.png";
 
 const projects = [
 	{
@@ -10,6 +11,13 @@ const projects = [
 		stack: 'JavaScript, HTML, SASS, API',
 		demoLink: 'https://asselzhl-image-gallery.netlify.app/',
 		gitHubLink: 'https://github.com/asselzhl/image-gallery',
+	},
+	{
+		img: project05,
+		title: 'Weather APP',
+		stack: 'React, Tailwind CSS, ChartJS, Axios, Swiper.js',
+		demoLink: 'https://asselzhl-weather-app.netlify.app/',
+		gitHubLink: 'https://github.com/asselzhl/weather-app',
 	},
 	{
 		img: project02,
