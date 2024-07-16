@@ -41,21 +41,23 @@ const Project = ({ id, title, img }) => {
       </div>
       <div className="p-5 sm:p-[30px]">
         <h4 className="sm:text-xl font-bold mb-5">{project.title}</h4>
-        <p className="text-xs sm:text-sm mb-5">
+        <p className="text-base  mb-5">
           <span className="font-bold">Tech stack : </span>
           {project.stack}
         </p>
         <div className="flex flex-wrap gap-3 sm:gap-x-[50px]">
-          <a
-            className="underline text-sm hover:opacity-60 ease-in-out duration-500 hover:cursor-pointer flex gap-x-2"
-            href={project.demoLink}
-            target="_blank"
-          >
-            <span>
-              <img src={anchor} alt="anchor" />
-            </span>
-            <span>Live Preview</span>
-          </a>
+          {project.demoLink && (
+            <a
+              className="underline text-sm hover:opacity-60 ease-in-out duration-500 hover:cursor-pointer flex gap-x-2"
+              href={project.demoLink}
+              target="_blank"
+            >
+              <span>
+                <img src={anchor} alt="anchor" />
+              </span>
+              <span>Live Preview</span>
+            </a>
+          )}
           <a
             className="underline text-sm hover:opacity-60 ease-in-out duration-500 hover:cursor-pointer flex gap-x-2"
             href={project.gitHubLink}
